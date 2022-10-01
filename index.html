@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Therapy Consultation</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+
+    <!--<script src="script.js"></script>-->
+
+</head>
+
+<body>
+
+    <!-- Header section starts  -->
+
+    <header>
+
+        <a href="#" class="logo">I<span  class="fal fa-head-side"></span>Neuro</a>
+        <div id="menu" class="fas fa-bars"></div>
+
+        <nav class="navbar">
+            <a class="active" href="#home">Home</a>
+            <a href="#prevent">Symptoms</a>
+            <a href="#appointment">Appointments</a>
+            <a href="#doctor">Doctors</a>
+            <a href="cart.html">Purchase</a>
+        </nav>
+
+    </header>
+    <!-- Header section ends -->
+
+    <!-- Home section starts  -->
+    <section class="home" id="home">
+
+        <div class="content">
+            <h1>Therapy Consulation</h1>
+            <h3> Get the care you deserve.</h3>
+
+            <a href="/public/views/index" class="btn">LOGIN  /  SIGN  UP</a>
+        </div>
+
+    </section>
+    <!-- Home section ends -->
+
+    <!-- Prevent section starts  -->
+    <section class="prevent" id="prevent">
+
+        <h1 class="heading"> Signs and Symptoms of Depression </h1>
+
+        <div class="box-container">
+
+            <div class="box">
+                <img src="images/pre-1.png" alt="">
+                <h3>Loss of Interest</h3>
+                <p>Feeling a loss of interest can make it harder to do the things you need to do each day. It can leave you feeling listless, disinterested, and unmotivated to do much of anything at all.</p>
+            </div>
+
+            <div class="box">
+                <img src="images/pre-2.png" alt="">
+                <h3>Appetite or Weight Change</h3>
+                <p>Changes in your eating habits is a symptom of depression.Loss of appetite can be an early sign of depression or a warning of a depression relapse. </p>
+            </div>
+
+            <div class="box">
+                <img src="images/pre-3.png" alt="">
+                <h3>Sleeping issues</h3>
+                <p>People with depression may find it difficult to fall asleep and stay asleep during the night. They can also have excessive daytime sleepiness or even sleep too much.</p>
+            </div>
+
+            <div class="box">
+                <img src="images/pre-4.png" alt="">
+                <h3>Fatigue</h3>
+                <p>Continuous feelings of sadness, anxiety, or emptiness.People with chronic fatigue syndrome usually want to engage in activities but just feel too tired to do so.</p>
+            </div>
+
+            <div class="box">
+                <img src="images/pre-5.png" alt="">
+                <h3>Irritatibility/Frustration</h3>
+                <p>Irritability is a feature of depression itself, so it's not surprising that this form of anger is connected to depression. </p>
+            </div>
+
+            <div class="box">
+                <img src="images/pre-6.png" alt="">
+                <h3>Persistent feeling of sadness</h3>
+                <p>Constant changes in mood, fluctuating emotional well-being, such as feeling empty, sad, hopeless.</p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Prevent section ends -->
+
+
+
+    <!-- Appointment section starts  -->
+
+
+
+    <section class="appointment" id="appointment">
+
+        <h1 class="heading">Book an appointment!</h1>
+
+        <div class="column">
+
+            <div class="box-container">
+
+                <h3 class="title">Your details for the appointment </h3>
+
+                <form action="/appointment" id="ft-form" method="POST" accept-charset="UTF-8">
+                    <fieldset>
+
+                        <label>
+                        Name
+                        <input type="text" name="name" required name="entry.364295968">
+                      </label>
+                        <div class="two-cols">
+                            <label>
+                          Email address
+                          <input type="email" name="email" required name="entry.304934206">
+                        </label>
+                            <label>
+                          Phone number
+                          <input type="tel" name="phno" required name="entry.1661940655">
+                        </label>
+                        </div>
+                    </fieldset>
+                    <fieldset>
+
+                        <div class="two-cols">
+                            <label>
+                          Date
+                          <input type="date" name="appointment_date" required name="entry.1735440850">
+                        </label>
+                            <div class="inline">
+
+                                <label>
+                            <input type="hidden" name="morning_desired" value="no">
+                            <input type="checkbox" name="morning_desired" value="yes">
+                            Morning [9:00AM-12:00PM]
+                          </label>
+                                <label>
+                            <input type="hidden" name="evening_desired" value="no">
+                            <input type="checkbox" name="evening_desired" value="yes">
+                            Evening [4:00PM-7:00PM]
+                          </label>
+
+                            </div>
+                        </div>
+                        <p><br>Confirmation requested by</p>
+                        <div class="inline">
+
+                            <label>
+                          <input type="radio" name="confirm_by" value="email" checked>
+                          Email
+                        </label>
+                            <label>
+                          <input type="radio" name="confirm_by" value="phone">
+                          Phone call
+                        </label>
+
+                        </div>
+                    </fieldset>
+                    <div class="btns">
+                        <input type="text" name="_gotcha" value="" style="display:none;">
+                        <input type="submit" value="Submit request">
+
+                        <!--<a href="Elements/Payment/pay.html"></a>-->
+                    </div>
+                </form>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Appointment section ends -->
+
+    <!-- Doctors section start  -->
+
+    <section class="doctor" id="doctor">
+
+        <h1 class="heading">Consult our doctors</h1>
+
+        <div class="box-container">
+
+            <div class="box">
+                <img src="images/D1.jpeg" alt="">
+                <h3>Margaret Floy</h3>
+                <span>Licensed Mental Health Counselor</span>
+                <div class="share">
+                    <a href="#" class="fab fa-whatsapp"></a>
+                    <a href="#" class="fab fa-facebook-f"></a>
+                    <a href="#" class="fab fa-twitter"></a>
+                    <a href="#" class="fab fa-instagram"></a>
+                    <a href="#" class="fab fa-linkedin"></a>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="images/D3.jpeg" alt="">
+                <h3>Sigmund Freud</h3>
+                <span>Psychologist</span>
+                <div class="share">
+                    <a href="#" class="fab fa-whatsapp"></a>
+                    <a href="#" class="fab fa-facebook-f"></a>
+                    <a href="#" class="fab fa-twitter"></a>
+                    <a href="#" class="fab fa-instagram"></a>
+                    <a href="#" class="fab fa-linkedin"></a>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="images/D2.jpeg" alt="">
+                <h3>Brenda Milner</h3>
+                <span>Psychiatric or Mental Health Nurse</span>
+                <div class="share">
+                    <a href="#" class="fab fa-whatsapp"></a>
+                    <a href="#" class="fab fa-facebook-f"></a>
+                    <a href="#" class="fab fa-twitter"></a>
+                    <a href="#" class="fab fa-instagram"></a>
+                    <a href="#" class="fab fa-linkedin"></a>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Doctor section ends -->
+
+    <!-- Footer section starts  -->
+
+    <div class="footer">
+
+        <div class="box-container">
+
+            <div class="box">
+                <h3>About Us</h3>
+                <p> The importance of Mental Health is considered to be a road of awareness less taken by, what used to be considered as a taboo topic in the society, is now being brought to spotlight. As much as physical well being, the brain too needs nourishment,
+                    energy and positivity. <br><br>Our website “INeuro”, mainly focuses on the servicing of mental healthcare of students by providing our consultancy and self help services. </p>
+            </div>
+
+            <div class="box">
+                <h3>Follow Us</h3>
+                <a href="#">Facebook</a>
+                <a href="#">Twitter</a>
+                <a href="#">Instagram</a>
+                <a href="#">Linkedin</a>
+                <a href="#">Youtube</a>
+            </div>
+
+            <div class="box">
+                <div class="formBx">
+                    <form action="/contact" method="POST">
+                        <input type="text" name="name2" required placeholder="Full Name">
+                        <input type="email" name="email2" required placeholder="Email">
+                        <textarea placeholder="Your Message" name="message"></textarea>
+                        <input type="submit" value="Send">
+                    </form>
+
+                </div>
+            </div>
+
+
+        </div>
+
+        <!-- Footer section ends -->
+
+        <!-- scroll top  -->
+
+        <a href="#home" class="scroll-top">
+            <img src="images/Scroll.png" alt="">
+        </a>
+
+
+
+        <!-- jquery cdn link  -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+        <!-- custom js file link -->
+        <script src="script.js"></script>
+
+
+</body>
+
+</html>

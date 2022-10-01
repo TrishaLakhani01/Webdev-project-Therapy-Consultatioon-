@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Payment</title>
+    <link rel="stylesheet" href="paystyle.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+
+</head>
+
+
+<body>
+    <div class="container">
+        <div class="col1">
+            <div class="card">
+                <div class="front">
+                    <div class="type">
+                        <img class="bankid" />
+                    </div>
+                    <span class="chip"></span>
+                    <span class="card_number">&#x25CF;&#x25CF;&#x25CF;&#x25CF; &#x25CF;&#x25CF;&#x25CF;&#x25CF; &#x25CF;&#x25CF;&#x25CF;&#x25CF; &#x25CF;&#x25CF;&#x25CF;&#x25CF; </span>
+                    <div class="date"><span class="date_value">MM / YYYY</span></div>
+                    <span class="fullname">FULL NAME</span>
+                </div>
+                <div class="back">
+                    <div class="magnetic"></div>
+                    <div class="bar"></div>
+                    <span class="seccode">&#x25CF;&#x25CF;&#x25CF;</span>
+
+                </div>
+            </div>
+        </div>
+        <div class="col2">
+            <form action="/payment" method="POST">
+                <label>Address</label>
+                <input type="text" name="addr" required/>
+                <label>Pin Code</label>
+                <input type="text" name="pcode" required/>
+                <label>Card Number</label>
+                <input class="number" type="text" name="cno" ng-model="ncard" maxlength="19" onkeypress='return event.charCode >= 48 && event.charCode <= 57' />
+                <label>Cardholder name</label>
+                <input class="inputname" type="text" name="cname" required placeholder="" />
+                <label>Expiry date</label>
+                <input class="expire" type="text" placeholder="MM / YYYY" name="date" />
+                <label>Security Number</label>
+                <input class="ccv" type="text" placeholder="CVC" name="cvv" maxlength="3" onkeypress='return event.charCode >= 48 && event.charCode <= 57' />
+                <input type="submit" class="buy" value="PAY NOW">
+
+            </form>
+            <!-- <i class="material-icons">lock</i> PAY NOW</button> -->
+        </div>
+    </div>
+
+    <script src="payscript.js"></script>
+
+</body>
+
+</html>
